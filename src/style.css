@@ -1,0 +1,64 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url("./img/protostar-1668701736.avif");
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  color: #e67e22;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #2980b9;
+}
+
+#roundSelection,
+#game {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ecf0f17c;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 200px;
+  background-color: #3498dbb1;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #1c598a;
+  transform: translateY(0);
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #e74c3c;
+}
+
+#resultMessage {
+  margin-top: 10px;
+  font-size: 18px;
+}
