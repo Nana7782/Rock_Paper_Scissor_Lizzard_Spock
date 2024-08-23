@@ -1,10 +1,10 @@
 const MOVES = ["Rock", "Scissors", "Paper", "Spock", "Lizard"];
 const winningCombinations: { [key: string]: string[] } = {
-  rock: ["Scissors", "Lizard"],
-  scissors: ["Paper", "Lizard"],
-  paper: ["Rock", "Spock"],
-  spock: ["Scissors", "Rock"],
-  lizard: ["Paper", "Spock"],
+  Rock: ["Scissors", "Lizard"],
+  Scissors: ["Paper", "Lizard"],
+  Paper: ["Rock", "Spock"],
+  Spock: ["Scissors", "Rock"],
+  Lizard: ["Paper", "Spock"],
 };
 
 let totalRounds: number;
@@ -70,7 +70,7 @@ function updateDisplay() {
 }
 
 function endGame() {
-  let resultText = "Unentschieden!";
+  let resultText = "Draw!";
   if (playerScore > computerScore) {
     resultText = "You've won!";
   } else if (playerScore < computerScore) {
