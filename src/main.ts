@@ -16,6 +16,12 @@ document.getElementById("startGame")?.addEventListener("click", () => {
   const selectedRounds = document.querySelector(
     'input[name="rounds"]:checked'
   ) as HTMLInputElement;
+
+  if (!selectedRounds) {
+    alert("Bitte wähle die Anzahl der Runden aus!");
+    return;
+  }
+
   totalRounds = parseInt(selectedRounds.value);
   currentRound = 0;
   playerScore = 0;
@@ -79,4 +85,6 @@ function endGame() {
 
   document.getElementById("result")!.innerText = resultText;
   document.getElementById("result")!.style.display = "block";
+
+  document.getElementById("game")!.style.display = "none";
 }
